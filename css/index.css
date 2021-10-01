@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -28,27 +27,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+a{
+    color: black;
+    text-decoration: none;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   /*border: 1px solid grey;*/
 }
 
 html, body {
@@ -66,9 +53,43 @@ p {
     line-height: 1.4;
 }
 
+header{
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    margin-left: 2%;
+    width: 100%;
+}
+.links{
+    width: 100%;
+    padding: 1%;
+    text-decoration: none;
+}
+.links a{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 55px;
+    align-items: center;
+}
+
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+    padding: 1%;
 }
 
 .top-content {
@@ -78,7 +99,13 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
+.top-img{
+    width: 250%;
+    padding: 1%;
+}
+.top-img img{
+    width: 100%;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -104,14 +131,42 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.box-1{
+    background-color: teal;
+}
+.box-2{
+    background-color: gold;
+}
+.box-3{
+    background-color: cadetblue;
+}
+.box-4{
+    background-color: coral;
+}
+.box-5{
+    background-color: crimson;
+}
+.box-6{
+    background-color: forestgreen;
+}
+.box-7{
+    background-color:darkorchid;
+}
+.box-8{
+    background-color: hotpink;
+}
+.box-9{
+    background-color:indigo;
+}
+.box-10{
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,10 +180,81 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/* about page*/
 
+.top-about-img{
+    width: 100%;
+    padding: 1%;
+}
+.top-about-img img{
+    width: 100%;
+}
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 1%;
+}
+.about-h2{
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.container-main-about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.part{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.part div{
+    border-bottom: 1px dashed black;
+}
+.part img{
+    width:100%
+}
+.part h2{
+    text-align: left;
+}
+.part p{
+    text-align: left;
+    margin-bottom: 2%;
+}
+button{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: white;
+    color: black;
+    border:2px solid black;
+    border-radius: 10px;
+    margin-bottom: 3%;
+
+}
+
+.last-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+.last-part{
+    margin-left:1%;
+    margin-bottom: 4%;
+}
 footer {
     width: 100%;
     background: black;
+    margin-left: 1%;
 }
 
 footer nav {
